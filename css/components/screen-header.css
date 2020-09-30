@@ -14,3 +14,10 @@
 .screen-header__icons span {
   margin-left: 25px;
 }
+
+.screen-header__notification {
+  display: flex;
+  position: fixed;
+  right: 15px;
+  margin-bottom: 20px;
+}
