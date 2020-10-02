@@ -16,3 +16,21 @@
 .settings__setting-column:last-child {
   opacity: 0.5;
 }
+
+@keyframes hover-there {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    color: tomato;
+    opacity: 0.5;
+  }
+  100% {
+    color: tomato;
+  }
+}
+
+.settings__setting-column:hover i,
+.settings__setting-column:hover span {
+  animation: hover-there 1s linear forwards;
+}
