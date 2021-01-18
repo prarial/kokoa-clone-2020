@@ -1,5 +1,37 @@
+.main-screen {
+  animation: downup 0.5s;
+}
+
+@keyframes downup {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
 .user-component {
   justify-content: space-between;
+  margin-bottom: 30px;
+}
+.user-component:hover {
+  animation: slideY 1s;
+}
+
+@keyframes slideY {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translate(0px);
+  }
 }
 .user-component,
 .user-component__column:first-child {
@@ -27,6 +59,19 @@
 .user-component__subtitle-icon {
   right: 7px;
   color: tomato;
+  animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: white;
+  }
+  50% {
+    color: tomato;
+  }
+  100% {
+    color: white;
+  }
 }
 
 .user-component__avatar--xl {

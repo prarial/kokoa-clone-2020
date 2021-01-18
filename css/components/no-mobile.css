@@ -1,7 +1,7 @@
 #no-mobile {
   height: 100vh;
   width: 100vw;
-  background-color: var(--yellow);
+  background: linear-gradient(254deg, #28caa0, #2881ca, #7cbbee, #c7dbea);
   position: absolute;
   z-index: 99;
   display: flex;

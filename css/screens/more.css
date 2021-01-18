@@ -1,11 +1,13 @@
 .more-screen .icon-row {
   margin-top: 35px;
+  animation: fadeIn 2s;
 }
 
 .more-suggestions {
   margin-top: 50px;
   border-top: var(--main-border);
-  padding-top: 40px;
+  padding-top: 0.4px;
+  animation: fadeIn 2s;
 }
 
 .more-suggestions__title {
@@ -40,6 +42,23 @@
   color: white;
 }
 
+.more-suggestions__icon-image i:hover {
+  animation: colorKakao 2s;
+}
+
+@keyframes colorKakao {
+  0% {
+    color: #ffffff;
+  }
+  100% {
+    color: #443731;
+  }
+}
+
 .more-suggestions__icon-text {
   opacity: 0.8;
+}
+
+.fa-comment-alt {
+  animation: updown 1s infinite;
 }

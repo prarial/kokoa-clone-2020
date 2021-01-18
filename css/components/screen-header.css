@@ -33,3 +33,78 @@
 .screen-header__icons .fa-cog:hover {
   animation: rotateCog 1s linear infinite;
 }
+
+.screen-header__icons .fa-music:hover {
+  animation: shake 0.3s linear infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0);
+    color: #e74c3c;
+  }
+  20% {
+    transform: translate(-2px, 2px);
+    color: #e67e22;
+  }
+  40% {
+    transform: translate(-2px, 2px);
+    color: #f1c40f;
+  }
+  60% {
+    transform: translate(2px, 2px);
+    color: #2ecc71;
+  }
+  80% {
+    transform: translate(-2px, -2px);
+    color: #2980b9;
+  }
+  100% {
+    transform: translate(0);
+    color: #341f97;
+  }
+}
+
+.screen-header__icons .fa-search:hover {
+  animation: rotateSearch 1s linear infinite;
+}
+
+@keyframes rotateSearch {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.screen-header__icons .fa-comment-dots:hover {
+  animation: blink 5s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: #e74c3c;
+  }
+  15% {
+    color: #e67e22;
+  }
+  30% {
+    color: #f1c40f;
+  }
+  45% {
+    color: #2ecc71;
+  }
+  60% {
+    color: #2980b9;
+  }
+  75% {
+    color: #341f97;
+  }
+  90% {
+    color: #5f27cd;
+  }
+  100% {
+    color: black;
+  }
+}
