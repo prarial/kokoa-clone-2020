@@ -1,5 +1,5 @@
 #chat-screen {
-  background-color: var(--room-color);
+  background-color: whitesmoke;
   height: 500vh;
 }
 
@@ -8,7 +8,7 @@
   top: 0px;
   position: fixed;
   width: 100%;
-  background-color: var(--room-color);
+  background-color: whitesmoke;
   box-sizing: border-box;
 }
 
@@ -71,12 +71,24 @@
 }
 
 .message__buble {
-  background-color: white;
+  background-color: #2ecc71;
   font-size: 18px;
   padding: 13px;
   border-radius: 15px;
   border-top-left-radius: 0px;
   margin-right: 5px;
+}
+
+@keyframes slideX {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translate(0px);
+  }
 }
 
 .message__time,
@@ -89,7 +101,7 @@
 }
 
 .message-row--own .message__buble {
-  background-color: var(--yellow);
+  background-color: #3498db;
   border-top-right-radius: 0;
   border-top-left-radius: 15px;
   margin-right: 0px;
@@ -145,7 +157,7 @@
   top: 15px;
 }
 .reply__column button {
-  background-color: var(--yellow);
+  background-color: #00cec9;
   border: none;
   width: 40px;
   height: 40px;

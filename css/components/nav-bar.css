@@ -69,3 +69,27 @@
 .nav__btn:last-child {
   animation-delay: 0.8s;
 }
+
+.nav__btn .fa-search:hover {
+  animation: rotateSearch 1s infinite;
+}
+
+.nav__btn .fa-user:hover {
+  animation: blink 3s infinite;
+}
+
+.nav__btn .fa-ellipsis-h:hover {
+  animation: pump 1s infinite;
+}
+
+@keyframes pump {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: none;
+  }
+}

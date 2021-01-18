@@ -20,6 +20,34 @@
   align-items: center;
 }
 
-.status-bar__column .fa-battery-full {
+.status-bar__column .fa-bolt {
   margin: 0px 5px;
+  animation: bolt 1s infinite;
+}
+
+@keyframes bolt {
+  0% {
+    transform: translate(0);
+    color: #f1c40f;
+  }
+  20% {
+    transform: translate(-1px, 1px);
+    color: #e67e22;
+  }
+  40% {
+    transform: translate(-1px, 1px);
+    color: #f1c40f;
+  }
+  60% {
+    transform: translate(1px, 1px);
+    color: #e67e22;
+  }
+  80% {
+    transform: translate(-1px, -1px);
+    color: #f1c40f;
+  }
+  100% {
+    transform: translate(0);
+    color: #e67e22;
+  }
 }
